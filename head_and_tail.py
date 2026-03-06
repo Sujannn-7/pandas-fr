@@ -9,3 +9,6 @@ print(df.head(n))
 
 print("Displaying Last n Rows")
 print(df.tail(n))
+
+print("Displaying first 5 Rows")
+print(df.tail())
