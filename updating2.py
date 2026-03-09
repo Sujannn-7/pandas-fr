@@ -6,13 +6,8 @@ data = {
     "Salary": [50000, 45000, 43000, 56000, 45000, 50000, 34000, 54000, 60000, 45000],
     "Rating": [4.5, 4.0, 3.9, 4.6, 4.7, 4.1, 4.3, 4.1, 4.33, 4.19]
 }
-
 df = pd.DataFrame(data)
-df.index += 1
 print(df)
 
-df.loc[1, "Name"] = "Christopher"
-print(df)
-
-df.loc[11, ["Name", "Age", "Salary", "Rating"]] = ["Rebecca", 45, 50000, 4.6]
+df["Salary"] =df["Salary"]*1.05
 print(df)

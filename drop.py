@@ -8,11 +8,10 @@ data = {
 }
 
 df = pd.DataFrame(data)
-df.index += 1
 print(df)
 
-df.loc[1, "Name"] = "Christopher"
-print(df)
+# df.drop(columns=["Rating"], inplace=True)
+# print(df)
 
-df.loc[11, ["Name", "Age", "Salary", "Rating"]] = ["Rebecca", 45, 50000, 4.6]
-print(df)
+new_df = df.drop(columns=["Rating", "Age"])
+print(new_df)
